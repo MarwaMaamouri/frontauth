@@ -8,12 +8,12 @@ import LoginPage from './components/LoginPage'
 function App() {
   return (
     
-
-    <LoginPage>
-    </LoginPage>
-
-
+<div>
+<LoginPage>
+</LoginPage>
 <p>AppJsFile</p>
+</div>
+   
     
   );
 }
