@@ -6,9 +6,13 @@ import LoginPage from './components/LoginPage'
  
 
 function App() {
-  return (   
- <LoginPage>
- </LoginPage>  
+  return (  
+    <div>
+      <LoginPage>
+     </LoginPage>  
+     <p>tester ce text sur un branche marwa</p>
+    </div> 
+ 
   );
 }
 
