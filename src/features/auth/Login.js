@@ -29,7 +29,7 @@ import axios from 'axios'
       email:this.state.email,
       password:this.state.password
     }
-    axios.post('http://192.168.2.177:3000/api/auth/signin', request)
+    axios.post('http://localhost:3000/api/auth/signin', request)
     .then( resp => {
        
        this.setState({currentUser:resp.data.user})

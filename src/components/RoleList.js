@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Container } from 'semantic-ui-react';
 import { Grid, Header} from 'semantic-ui-react'
 const api = axios.create({
-    baseURL:`http://192.168.2.177:3000/all`,
+    baseURL:`http://localhost:3000/all`,
     
     })
 
@@ -24,7 +24,7 @@ export default class RoleList extends Component {
     loginTest=(e)=>{
       e.preventDefault()
       
-      axios.get('http://192.168.2.177:3000/all',{'headers': {
+      axios.get('http://localhost:3000/all',{'headers': {
         'x-access-token':localStorage.getItem('token')
         } })
       .then( res => {

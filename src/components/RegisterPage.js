@@ -49,7 +49,7 @@ export default class RegisterPage extends Component {
       roles:[this.state.list],
       password: this.state.password
     }
-    axios.post('http://192.168.2.177:3000/api/auth/signup', request)
+    axios.post('http://localhost:3000/api/auth/signup', request)
     .then( resp => {
       alert('utilisateur enregistré')
 
